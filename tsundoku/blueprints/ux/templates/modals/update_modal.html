@@ -3,22 +3,20 @@
     <div class="modal-background" onclick="closeModals();"></div>
     <div class="modal-card">
         <header class="modal-card-head">
-            <p class="modal-card-title">Tsundoku Update Detected</p>
+            <p class="modal-card-title">Обнаружено новое обновление Tsundoku</p>
             <button class="delete" onclick="closeModals();" aria-label="close"></button>
         </header>
 
         <section class="modal-card-body">
-            <p class="has-text-centered">You are currently <b>{{ updates|length }}</b> commit{% if updates|length > 1 %}s{% endif %} behind!</p>
+            <p class="has-text-centered">В данный момент найдено <b>{{ updates|length }}</b> коммит{% if updates|length > 1 %}ов{% endif %}!</p>
             <hr>
-            <p>Would you like to update? The most recent
-                {% if updates|length > 10 %}10{% else %}{{ updates|length }}{% endif %} commit{% if updates|length > 1 %}s{% endif %} are
-                displayed below, most recent at the top.</p>
+            <p>Хотите обновиться?</p>
             <div class="table-container">
                 <table class="table is-fullwidth">
                     <thead>
                         <tr>
                             <th>Commit #</th>
-                            <th>Message</th>
+                            <th>Сообщение</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -28,7 +26,7 @@
                         {% else %}
                         <tr>
                         {% endif %}
-                            <th><a href="https://github.com/tylergibbs2/Tsundoku/commit/{{ hash_ }}">{{ hash_[:6] }}</a>
+                            <th><a href="https://github.com/maxivimax/TsundokuRUS/commit/{{ hash_ }}">{{ hash_[:6] }}</a>
                             </th>
                             <td>{{ msg }}</td>
                         </tr>
@@ -45,8 +43,8 @@
 
         <footer class="modal-card-foot">
             <progress id="updating-pg-bar" class="progress is-large is-primary is-hidden" max="100"></progress>
-            <button id="update-button" class="button is-primary" onclick="updateTsundoku();">Update</button>
-            <button id="close-update-modal-button" class="button" onclick="closeModals();">No, not now</button>
+            <button id="update-button" class="button is-primary" onclick="updateTsundoku();">Обновить</button>
+            <button id="close-update-modal-button" class="button" onclick="closeModals();">Не сейчас</button>
         </footer>
     </div>
 </div>
