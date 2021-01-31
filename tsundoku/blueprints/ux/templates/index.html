@@ -31,8 +31,8 @@
 
 <section class="section">
     <div class="container mb-3">
-        <h1 class="title">Shows</h1>
-        <h2 class="subtitle">Tracked shows in RSS</h2>
+        <h1 class="title">Мои отслеживания</h1>
+        <h2 class="subtitle">Отслеживаемые аниме в RSS</h2>
     </div>
 
     <div id="show-card-container" class="container">
@@ -70,18 +70,18 @@
                     </div>
                     <footer class="card-footer">
                         <p class="card-footer-item">
-                            <a onclick='openEditShowModal( {{ show|tojson }} );'>Edit</a>
+                            <a onclick='openEditShowModal( {{ show|tojson }} );'>Изменить</a>
                         </p>
                         <p class="card-footer-item">
-                            <a onclick='openDeleteShowModal( {{ show|tojson }} );'>Delete</a>
+                            <a onclick='openDeleteShowModal( {{ show|tojson }} );'>Удалить</a>
                         </p>
                     </footer>
                 </div>
             </div>
             {% else %}
             <div class="container has-text-centered my-6">
-                <h3 class="title is-3">Nothing to see here!</h3>
-                <h4 class="subtitle is-5">Begin by adding a show below.</h4>
+                <h3 class="title is-3">Тут ничего нет!</h3>
+                <h4 class="subtitle is-5">Сначала добавьте что-то сюда, кнопкой ниже.</h4>
             </div>
             {% endfor %}
         </div>
@@ -92,13 +92,13 @@
             </p>
         </a>
         <a id="back-to-top-link" class="is-hidden">
-            <p class="has-text-centered">Back to Top</p>
+            <p class="has-text-centered">На верх</p>
         </a>
         {% endif %}
     </div>
 
     <div class="has-text-centered mt-3">
-        <button class="button is-medium is-success" onclick="openAddShowModal();">Add show</button>
+        <button class="button is-medium is-success" onclick="openAddShowModal();">Добавить аниме</button>
     </div>
 
 </section>

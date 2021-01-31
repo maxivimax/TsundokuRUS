@@ -4,7 +4,7 @@
 <head>
     <!-- Page Meta -->
     <meta charset="UTF-8">
-    <title>積ん読 ANIME</title>
+    <title>積ん読</title>
     <link rel="shortcut icon" href="{{ url_for ('ux.static', filename='img/favicon.ico') }}">
 
     <!-- CSS -->
@@ -23,7 +23,7 @@
     {% include 'modals/login/help.html' %}
 
     <div class="container">
-        <h1 class="title is-1 has-text-centered mt-6">Tsundoku</h1>
+        <h1 class="title is-1 has-text-centered mt-6"><img src="{{ url_for('ux.static', filename='img/logom.png') }}" width="172" height="88"></h1>
         <div class="columns is-centered mt-1">
             <div class="column is-one-quarter">
                 <form action="{{ url_for('ux.login') }}" method="POST">

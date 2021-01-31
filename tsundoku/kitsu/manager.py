@@ -30,14 +30,12 @@ class KitsuManager:
         """
         Attempts to retrieve Kitsu information
         for a specified show name from the Kitsu API.
-
         Parameters
         ----------
         show_id: int
             The show's ID.
         show_name: str
             The name of the show.
-
         Returns
         -------
         Optional[KitsuManager]
@@ -85,14 +83,12 @@ class KitsuManager:
         """
         Attempts to retrieve Kitsu information
         for a specified show ID from the Kitsu API.
-
         Parameters
         ----------
         show_id: int
             The show's ID.
         kitsu_id: int
             The name of the show.
-
         Returns
         -------
         Optional[KitsuManager]
@@ -140,12 +136,10 @@ class KitsuManager:
         """
         Retrieves Kitsu information from the database based
         on a show's ID.
-
         Parameters
         ----------
         show_id: int
             The show's ID in the database.
-
         Returns
         -------
         Optional[KitsuManager]
@@ -177,7 +171,6 @@ class KitsuManager:
         """
         Returns the link to the show on Kitsu
         from the show's ID.
-
         Returns
         -------
         str
@@ -203,7 +196,6 @@ class KitsuManager:
     async def get_poster_image(self) -> Optional[str]:
         """
         Returns the link to the show's poster.
-
         Returns
         -------
         Optional[str]
@@ -254,7 +246,6 @@ class KitsuManager:
     async def get_status(self) -> Optional[str]:
         """
         Returns the status of the show.
-
         Returns
         -------
         Optional[str]

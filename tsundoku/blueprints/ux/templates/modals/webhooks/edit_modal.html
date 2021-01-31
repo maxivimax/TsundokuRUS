@@ -2,7 +2,7 @@
     <div class="modal-background" onclick="closeWebhookModals();"></div>
     <div class="modal-card">
         <header class="modal-card-head">
-            <p class="modal-card-title">Edit Webhook</p>
+            <p class="modal-card-title">Добавить WebHook</p>
         </header>
 
         <section class="modal-card-body">
@@ -11,7 +11,7 @@
                 <div class="field">
                     <label class="label">
                         <span class="has-tooltip-arrow has-tooltip-multiline has-tooltip-right"
-                            data-tooltip="Name of the webhook, only for display purposes.">Name</span>
+                            data-tooltip="Имя WebHook'a, только для отображения.">Название</span>
                     </label>
                     <div class="control">
                         <input name="name" class="input" type="text" placeholder="My Webhook" required>
@@ -21,7 +21,7 @@
                 <div class="field">
                     <label class="label">
                         <span class="has-tooltip-arrow has-tooltip-multiline has-tooltip-right"
-                            data-tooltip="The service that the webhook posts to.">Service</span>
+                            data-tooltip="Служба WebHook'а.">Сервис</span>
                     </label>
                     <div class="select">
                         <select name="service">
@@ -34,7 +34,7 @@
                 <div class="field">
                     <label class="label">
                         <span class="has-tooltip-arrow has-tooltip-multiline has-tooltip-right"
-                            data-tooltip="URL that the webhook posts to.">URL</span>
+                            data-tooltip="URL-адрес, на который отправляется WebHook.">URL</span>
                     </label>
                     <div class="control">
                         <input name="url" class="input" pattern="https://.*" type="url" required>
@@ -44,7 +44,7 @@
                 <div class="field">
                     <label class="label">
                         <span class="has-tooltip-arrow has-tooltip-multiline has-tooltip-right"
-                            data-tooltip="The format that the content will be sent in.">Content Format</span>
+                            data-tooltip="Формат, в котором будет отправлено содержимое.">Формат содержимого</span>
                     </label>
                     <div class="control">
                         <input name="content_fmt" class="input" type="text" placeholder="{name}, episode {episode}, has been marked as {state}">
@@ -56,8 +56,8 @@
 
         <footer class="modal-card-foot">
             <input class="button is-success" type="submit" form="edit-webhook-form"
-                value="Save changes"></button>
-            <button class="button" onclick="closeWebhookModals();">Cancel</button>
+                value="Сохранить изменения"></button>
+            <button class="button" onclick="closeWebhookModals();">Отмена</button>
         </footer>
     </div>
 </div>

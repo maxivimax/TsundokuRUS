@@ -50,8 +50,8 @@ export const SearchBox = ({ setResults }: SearchBoxParams) => {
 export const SpaceHolder = () => {
     return (
         <div class="container has-text-centered my-6">
-            <h3 class="title is-3">Nothing to see here!</h3>
-            <h4 class="subtitle is-5">Start searching to see some results.</h4>
+            <h3 class="title is-3">Здесь пусто!</h3>
+            <h4 class="subtitle is-5">Начните поиск, чтобы увидеть результаты.</h4>
         </div>
     )
 }
@@ -67,9 +67,9 @@ export const SearchTable = ({ setChoice, results }: SearchTableParams) => {
             <table class="table is-hoverable is-fullwidth">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Size</th>
-                        <th>Date</th>
+                        <th>Название</th>
+                        <th>Размер</th>
+                        <th>Дата</th>
                         <th title="Seeders"><span class="icon"><i class="fas fa-arrow-up"></i></span></th>
                         <th title="Leechers"><span class="icon"><i class="fas fa-arrow-down"></i></span></th>
                         <th title="Link to Post"><span class="icon"><i class="fas fa-link"></i></span></th>

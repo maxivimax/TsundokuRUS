@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tylergibbs2/Tsundoku.git"
+    "url": "git+https://github.com/maxivimax/TsundokuRUS.git"
   },
   "author": "Tyler Gibbs",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tylergibbs2/Tsundoku/issues"
+    "url": "https://github.com/maxivimax/TsundokuRUS/issues"
   },
-  "homepage": "https://github.com/tylergibbs2/Tsundoku#readme",
+  "homepage": "https://github.com/maxivimax/TsundokuRUS#readme",
   "scripts": {
     "build": "webpack --mode=production",
     "build-dev": "webpack --mode=development --watch"

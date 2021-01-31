@@ -23,8 +23,8 @@
 
 <section class="section">
     <div class="container mb-3">
-        <h1 class="title">Webhooks</h1>
-        <h2 class="subtitle">Usable by your tracked shows</h2>
+        <h1 class="title">WebHooks</h1>
+        <h2 class="subtitle">Может использоваться вашими RSS</h2>
     </div>
 
     <div id="webhook-card-container" class="container">
@@ -55,25 +55,25 @@
                     </div>
                     <footer class="card-footer">
                         <p class="card-footer-item">
-                            <a onclick='openEditWebhookModal( {{ webhook|tojson }} );'>Edit</a>
+                            <a onclick='openEditWebhookModal( {{ webhook|tojson }} );'>Изменить</a>
                         </p>
                         <p class="card-footer-item">
-                            <a onclick='openDeleteWebhookModal( {{ webhook|tojson }} );'>Delete</a>
+                            <a onclick='openDeleteWebhookModal( {{ webhook|tojson }} );'>Удалить</a>
                         </p>
                     </footer>
                 </div>
             </div>
             {% else %}
             <div class="container has-text-centered my-6">
-                <h3 class="title is-3">Nothing to see here!</h3>
-                <h4 class="subtitle is-5">Begin by adding a webhook below.</h4>
+                <h3 class="title is-3">Тут пусто(</h3>
+                <h4 class="subtitle is-5">Начните с добавления WebHook с помощью кнопки ниже.</h4>
             </div>
             {% endfor %}
         </div>
     </div>
 
     <div class="container has-text-centered mt-3">
-        <button class="button is-medium is-success" onclick="openAddWebhookModal();">Add webhook</button>
+        <button class="button is-medium is-success" onclick="openAddWebhookModal();">Добавить WebHook</button>
     </div>
 </section>
 
