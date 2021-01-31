@@ -1,0 +1,20 @@
+:root {
+    --light-grey: hsl(0, 0%, 93%);
+}
+
+html {
+    overflow: hidden;
+}
+
+.dpy-special-white {
+    background-color: hsl(0, 0%, 92%);
+}
+
+.menu-panel-footer {
+    position: absolute;
+    bottom: 3%;
+}
+
+.menu-panel-footer p {
+    position: relative;
+}
